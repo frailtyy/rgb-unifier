@@ -15,7 +15,6 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "openrgb-sdk": "0.1.2",
     "node-hid": "^2.1.2"
   },
   "devDependencies": {
