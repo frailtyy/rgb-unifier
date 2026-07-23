@@ -1,0 +1,30 @@
+{
+  "name": "rgb-unifier",
+  "version": "0.1.0",
+  "description": "Desktop app to unify PC RGB and hardware settings for Bea Provis",
+  "main": "src/main.ts",
+  "scripts": {
+    "dev": "concurrently \"npm:dev:electron\" \"npm:dev:renderer\"",
+    "dev:electron": "ts-node src/main.ts",
+    "dev:renderer": "vite",
+    "build": "vite build && tsc -p .",
+    "package": "electron-builder"
+  },
+  "author": "Bea Provis",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "openrgb-sdk": "^1.2.0",
+    "node-hid": "^2.1.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "typescript": "^5.2.2",
+    "vite": "^4.4.9",
+    "concurrently": "^8.2.0",
+    "electron": "^28.0.0",
+    "electron-builder": "^24.6.0"
+  }
+}
